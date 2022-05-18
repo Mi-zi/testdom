@@ -5,6 +5,7 @@ public class CreateMeanTest {
         Person2 ming = new Person2();
         ming.setName("  Mi Zi ");
         ming.setAge(15);
+        ming.id = 300;
         System.out.println(ming.getName() + "年龄是：" + ming.getAge());
     }
 }
@@ -12,6 +13,8 @@ public class CreateMeanTest {
 class Person2 {
     private String name;
     private int age;
+
+    public int id;
 
     public String getName() {
         return this.name;
@@ -35,4 +38,5 @@ class Person2 {
         }
         this.age = age;
     }
+
 }
